@@ -567,3 +567,55 @@ input[type="radio"].visually-hidden {
   transform: scale(1);
 
 }
+
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #05050591;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  
+}
+
+.popup:target{
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-body{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.popup-content{
+  background-color: #f8f8f8;
+  color: #000000;
+  width: 800px;
+  padding: 30px;
+  position: relative;
+}
+
+.popup-close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.popup-title{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.popup-text{
+
+}
