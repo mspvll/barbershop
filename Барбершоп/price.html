@@ -44,6 +44,19 @@
         </nav>
     </header>
 
+    <script>
+        let a = document.querySelector(".login-link")
+        console.log(a)
+
+        let b = document.querySelectorAll("nav li")
+        console.log(b)
+
+        a.addEventListener("click", function(){
+            console.log("like")
+        })
+        
+    </script>
+
     <main class="container">
         <div class="inner-page-container">
             <h1 class="page-title">Прайс-лист</h1>
@@ -58,7 +71,7 @@
             <h2 class="big-heading">Истинно мужская классика</h2>
             <div class="inner-columns">
                 <div class="inner-column-left">
-                    <h2>Мы используем только лучшие средства:</h2>
+                    <h2>Мы используем только <br> лучшие средства:</h2>
                     <ul class="custom-list-1">
                         <li>Baxter of California</li>
                         <li>Mr Natty</li>
@@ -67,7 +80,7 @@
                     </ul>
                 </div>
                 <div class="inner-column-right">
-                    <h2>Цены на услуги наших мастеров:</h2>
+                    <h2>Цены на услуги <br> наших мастеров:</h2>
                     <table class="custom-table-1">
                         <tr>
                             <td>Стрижка</td>
@@ -88,14 +101,14 @@
 
 
             <div class="inner-columns">
-                <div class="inner-column-left">
-                    <h2>Несколько слов о нас:</h2>
-                    <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента
+                <h2>Несколько слов о нас:</h2>
+                <div class="inner-column-left">                    
+                    <p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента
                         для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы
                         делаем качество.</p>
                 </div>
                 <div class="inner-column-right">
-                    <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в
+                    <p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в
                         любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас
                         атмосферу, чувствовать себя комфортно и свободно!</p>
                 </div>
@@ -164,4 +177,4 @@
 
 </body>
 
-</html>
+</html> 
